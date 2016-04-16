@@ -23,11 +23,11 @@ controller.on('bot_channel_join', function (bot, message) {
 })
 
 controller.hears(['hello', 'hi','bonzour'], ['direct_mention'], function (bot, message) {
-  bot.reply(message, 'Hello.')
+  bot.reply(message, 'Hello1.')
 })
 
-controller.hears(['hello', 'hi'], ['direct_message'], function (bot, message) {
-  bot.reply(message, 'Hello.')
+controller.hears(['hello', 'hi','bonzour'], ['direct_message'], function (bot, message) {
+  bot.reply(message, 'Hello2.')
   bot.reply(message, 'It\'s nice to talk to you directly.')
 })
 
